@@ -1,0 +1,14 @@
+img{
+    max-width: 100%;  
+  }
+  .old-price{
+    text-decoration-line: line-through;
+    color: gray;
+  }
+  .price{
+    font-size: 20px;
+  }
+  .product-name{
+    color: #212529;
+    text-decoration: none !important;
+  }

@@ -1,24 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ListProduct from "./ProductListPage/App";
+import ShoppingCart from "./ShoppingCartPage/App";
+import ProductDetail from "./ProductDetailPage/ProductDetail";
+import React from "react";
+import Home from "./HomePage/Home";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="container-fluid m-0 p-0">
+        <nav className="navbar navbar-expand-lg navbar-light row">
+          <div className="container-fluid col-10 m-auto">
+            <a className="navbar-brand" href="#">
+              Apple
+            </a>
+            <button
+              className="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div className="navbar-nav">
+                <Link className="nav-link active" aria-current="page" to="/">
+                  Home
+                </Link>
+                <Link className="nav-link" to="/product">
+                  Product
+                </Link>
+                <Link className="nav-link" to="/shopping-cart">
+                  Shopping Cart
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          {/* <Route path="/product/:details" children={<ProductDetail />} /> */}
+          <Route path="/product/:details">
+            <ProductDetail />
+          </Route>
+          <Route path="/product">
+            <ListProduct />
+          </Route>
+          <Route path="/shopping-cart">
+            <ShoppingCart />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

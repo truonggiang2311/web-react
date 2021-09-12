@@ -1,0 +1,35 @@
+img{
+  max-width: 160px;
+}
+.up{
+  margin-right: 5px;
+}
+.down{
+  margin-left: 5px;
+}
+.checkout{
+  background-color: #f8f9fa;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tax{
+  padding-bottom: 10px;
+}
+.total{
+  border-top: 1px solid #6c757d;
+  padding-top: 10px;
+}
+.container{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.name{
+  padding-left: 20px;
+  font-size: 24px;
+    line-height: 1.16667;
+    font-weight: 600;
+}
+.product{
+  border-bottom: 1px solid #6c757d;
+  padding-bottom: 20px;
+}
