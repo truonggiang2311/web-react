@@ -12,9 +12,9 @@ function App() {
       <div className="container-fluid m-0 p-0">
         <nav className="navbar navbar-expand-lg navbar-light row">
           <div className="container-fluid col-10 m-auto">
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" to="/">
               Apple
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -45,10 +45,7 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          {/* <Route path="/product/:details" children={<ProductDetail />} /> */}
-          <Route path="/product/:details">
-            <ProductDetail />
-          </Route>
+          <Route path="/product/:slug" children={<ProductDetail />} />
           <Route path="/product">
             <ListProduct />
           </Route>

@@ -1,10 +1,10 @@
-import PRODUCT from "./PRODUCT";
+import PRODUCTS from "./PRODUCTS";
 import ProductList from "./ProductList";
 import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [products, setProducts] = useState(PRODUCT);
+  const [products, setProducts] = useState(PRODUCTS);
   const [inputValue, setInputValue] = useState("");
   const [numberResult, setNumberResult] = useState(7);
   const [selectValue, setSelectValue] = useState("popularity");
@@ -14,13 +14,13 @@ function App() {
   }
 
   function search() {
-    let productSearch = PRODUCT.filter((product) =>
+    let productSearch = PRODUCTS.filter((product) =>
       product.name.toLowerCase().includes(inputValue.toLowerCase())
     );
     setProducts(productSearch);
     setNumberResult(productSearch.length);
     if (inputValue === "") {
-      setProducts(PRODUCT);
+      setProducts(PRODUCTS);
     }
   }
 
@@ -72,7 +72,7 @@ function App() {
         </div>
       </div>
       <div className="row list-product">
-        <ProductList products={products} />
+        <ProductList products={products}/>
       </div>
     </div>
   );

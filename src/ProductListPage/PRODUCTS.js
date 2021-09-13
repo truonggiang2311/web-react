@@ -1,10 +1,11 @@
-const PRODUCT = [
+const PRODUCTS = [
     {
         id: 1,
         name: "iPhone 11",
         src: "https://shopdunk.com/wp-content/uploads/2021/07/iPhone-11-Final.png",
         price: 13990000,
         lastPrice: 19990000,
+        slug: "iPhone-11"
     },
     {
         id: 2,
@@ -12,6 +13,7 @@ const PRODUCT = [
         src: "https://shopdunk.com/wp-content/uploads/2021/05/ip12-white.png",
         price: 18450000,
         lastPrice: 24450000,
+        slug: "iPhone-12"
     },
     {
         id: 3,
@@ -19,6 +21,7 @@ const PRODUCT = [
         src: "https://shopdunk.com/wp-content/uploads/2021/06/ip12-pro-max-graphite.png",
         price: 28460000,
         lastPrice: 34460000,
+        slug: "iPhone-12-Pro-Max"
     },
     {
         id: 4,
@@ -26,6 +29,7 @@ const PRODUCT = [
         src: "https://shopdunk.com/wp-content/uploads/2021/07/ip12-mini-red.png",
         price: 15550000,
         lastPrice: 21550000,
+        slug: "iPhone-12-Mini"
     },
     {
         id: 5,
@@ -33,6 +37,7 @@ const PRODUCT = [
         src: "https://shopdunk.com/wp-content/uploads/2021/07/iPhone-XR.png",
         price: 11490000,
         lastPrice: 13990000,
+        slug: "iPhone-XR"
     },
     {
         id: 6,
@@ -40,6 +45,7 @@ const PRODUCT = [
         src: "https://shopdunk.com/wp-content/uploads/2021/07/ip12-pro-pacific-blue.png",
         price: 25850000,
         lastPrice: 30990000,
+        slug: "iPhone-12-Pro"
     },
     {
         id: 7,
@@ -47,6 +53,7 @@ const PRODUCT = [
         src: "https://shopdunk.com/wp-content/uploads/2021/07/iPhone-SE-2020.png",
         price: 10490000,
         lastPrice: 12990000,
+        slug: "iPhone-12-SE"
     }
 ]
-export default PRODUCT;
+export default PRODUCTS;
