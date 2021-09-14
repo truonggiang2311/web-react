@@ -1,6 +1,23 @@
-import "./style.css";
+import "./HomePage.css";
+import { useState, useEffect } from "react";
+import ClipLoader from "react-spinners/ClipLoader";
+
 export default function Home() {
-  return (
+  const [loading, setLoading] = useState(false);
+  let [color, setColor] = useState("#36D7B7");
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 300);
+  }, []);
+
+  return loading ? (
+    <div className="text-center">
+      <ClipLoader color={color} loading={loading} size={50} />
+    </div>
+  ) : (
     <div className="">
       <div className="col-10 m-auto">
         <h1>Home</h1>
