@@ -1,0 +1,11 @@
+.oldPrice {
+  text-decoration-line: line-through;
+  color: gray;
+}
+.price {
+  font-size: 20px;
+}
+.productName {
+  color: #212529;
+  text-decoration: none !important;
+}

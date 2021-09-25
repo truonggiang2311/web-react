@@ -1,0 +1,31 @@
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  margin-bottom: 30px;
+  position: relative;
+}
+.nav-link a {
+  color: #f5f5f7 !important;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.navbar-brand a {
+  color: #f5f5f7 !important;
+  opacity: 0.7;
+  text-decoration: none;
+}
+.nav-link a:hover {
+  color: #f5f5f7 !important;
+  opacity: 1;
+}
+.navbar-brand a:hover {
+  color: #f5f5f7 !important;
+  opacity: 1;
+}
+.DropDownSearch {
+  right: 0;
+  position: absolute;
+  z-index: 1000;
+}
+.active a {
+  opacity: 1;
+}

@@ -1,0 +1,27 @@
+.Footer{
+    background-color: #1d1d1f;
+}
+.Footer .col{ 
+    padding-left: 0px;
+}
+.Footer li {
+  list-style: none;
+}
+.Footer h6 {
+    color: #FFF;
+  }
+.Footer a{
+  text-decoration: none;
+  color: #f5f5f7;
+  opacity: 0.7;
+  font-size: 15px;
+}
+.Footer-p{
+  color: #f5f5f7;
+  opacity: 0.7;
+  font-size: 15px;
+}
+.Footer a:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
