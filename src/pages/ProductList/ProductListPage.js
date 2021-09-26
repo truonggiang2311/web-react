@@ -20,14 +20,14 @@ function ProductListPage() {
     return () => {};
   }, [appleProduct]);
 
-  useEffect(() => {
-    setLoading(true);
-  }, [appleProduct]);
+  // useEffect(() => {
+  //   setLoading(true);
+  // }, [appleProduct]);
 
   function updateSelect(event) {
     if (event.target.value === "popularity") {
       fetch(
-        "https://product-list1409.herokuapp.com/products?_sort=id&_order=asc"
+        `https://product-list1409.herokuapp.com/${appleProduct}?_sort=id&_order=asc`
       )
         .then((response) => response.json())
         .then((result) => {
@@ -36,7 +36,7 @@ function ProductListPage() {
         });
     } else if (event.target.value === "price-increase") {
       fetch(
-        "https://product-list1409.herokuapp.com/products?_sort=price&_order=asc"
+        `https://product-list1409.herokuapp.com/${appleProduct}?_sort=price&_order=asc`
       )
         .then((response) => response.json())
         .then((result) => {
@@ -45,7 +45,7 @@ function ProductListPage() {
         });
     } else if (event.target.value === "price-decrease") {
       fetch(
-        "https://product-list1409.herokuapp.com/products?_sort=price&_order=desc"
+        `https://product-list1409.herokuapp.com/${appleProduct}?_sort=price&_order=desc`
       )
         .then((response) => response.json())
         .then((result) => {
