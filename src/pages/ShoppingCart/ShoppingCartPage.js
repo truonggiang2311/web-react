@@ -1,5 +1,5 @@
 import styles from "./ShoppingCartPage.module.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { remove1Product } from "../../store/cartSlice";

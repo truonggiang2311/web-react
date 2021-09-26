@@ -1,56 +1,68 @@
 import ProductList from "./ProductList";
 import { useState, useEffect } from "react";
 import ClipLoader from "react-spinners/ClipLoader";
+import { useParams } from "react-router";
 
 function ProductListPage() {
+  let { appleProduct } = useParams();
   const [numberResult, setNumberResult] = useState(0);
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://product-list1409.herokuapp.com/products/")
+    fetch(`https://product-list1409.herokuapp.com/${appleProduct}/`)
       .then((response) => response.json())
       .then((result) => {
         setProducts(result);
         setLoading(false);
-        setNumberResult(result.length)
+        setNumberResult(result.length);
       });
     return () => {};
-  }, []);
+  }, [appleProduct]);
 
+  useEffect(() => {
+    setLoading(true);
+  }, [appleProduct]);
 
   function updateSelect(event) {
     if (event.target.value === "popularity") {
-      fetch("https://product-list1409.herokuapp.com/products?_sort=id&_order=asc")
-      .then((response) => response.json())
-      .then((result) => {
-        setProducts(result);
-        setLoading(false);
-      });
+      fetch(
+        "https://product-list1409.herokuapp.com/products?_sort=id&_order=asc"
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          setProducts(result);
+          setLoading(false);
+        });
     } else if (event.target.value === "price-increase") {
-      fetch("https://product-list1409.herokuapp.com/products?_sort=price&_order=asc")
-      .then((response) => response.json())
-      .then((result) => {
-        setProducts(result);
-        setLoading(false);
-      });
+      fetch(
+        "https://product-list1409.herokuapp.com/products?_sort=price&_order=asc"
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          setProducts(result);
+          setLoading(false);
+        });
     } else if (event.target.value === "price-decrease") {
-      fetch("https://product-list1409.herokuapp.com/products?_sort=price&_order=desc")
-      .then((response) => response.json())
-      .then((result) => {
-        setProducts(result);
-        setLoading(false);
-      });
+      fetch(
+        "https://product-list1409.herokuapp.com/products?_sort=price&_order=desc"
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          setProducts(result);
+          setLoading(false);
+        });
     }
   }
 
-  function selectSort() {
-    
-  }
+  function selectSort() {}
   selectSort();
 
   return loading ? (
-    <div className="text-center" style={{"margin-top" : "300px", "margin-bottom" : "1000px"}}>
+    <div
+      className="text-center"
+      style={{ "margin-top": "300px", "margin-bottom": "1000px" }}
+    >
       <ClipLoader color="#36D7B7" loading={loading} size={50} />
     </div>
   ) : (

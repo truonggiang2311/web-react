@@ -1,6 +1,6 @@
 import MenuLink from "./MenuLink";
 import DropDownSearch from "../DropDownSearch/DropDownSearch";
-import "./Menu.css"
+import "./Menu.css";
 import { debounce } from "lodash";
 import { Collapse } from "bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,7 +12,7 @@ import { useSelector } from "react-redux";
 export default function Menu() {
   const [inputValue, setInputValue] = useState("");
   const [productSearch, setProductSearch] = useState([]);
-  const numberItems = useSelector((state) => state.cart.numberItems)
+  const numberItems = useSelector((state) => state.cart.numberItems);
 
   function changeValue(e) {
     if (e.target.value !== "") {
@@ -52,21 +52,21 @@ export default function Menu() {
               <div className="nav-link pe-3">
                 <MenuLink
                   className="nav-link pe-3"
-                  to="/iphone"
+                  to="/products/iphone"
                   label="iPhone"
                 />
               </div>
               <div className="nav-link pe-3">
-                <MenuLink to="/ipad" label="iPad" />
+                <MenuLink to="/products/ipad" label="iPad" />
               </div>
               <div className="nav-link pe-3">
-                <MenuLink to="/mac" label="Mac" />
+                <MenuLink to="/products/mac" label="Mac" />
               </div>
               <div className="nav-link pe-3">
-                <MenuLink to="/apple-watch" label="Apple Watch" />
+                <MenuLink to="/products/apple-watch" label="Apple Watch" />
               </div>
               <div className="nav-link pe-3">
-                <MenuLink to="/airpods" label="AirPods" />
+                <MenuLink to="/products/airpods" label="AirPods" />
               </div>
               <div className="nav-link pe-3">
                 <MenuLink to="/phu-kien" label="Phụ kiện" />
@@ -97,7 +97,9 @@ export default function Menu() {
 
               <Link className="nav-link shopping-cart" to="/shopping-cart">
                 <FontAwesomeIcon icon={faShoppingBag} size="lg" color="white" />
-                <div className="number-shopping-cart text-center">{numberItems}</div>
+                <div className="number-shopping-cart text-center">
+                  {numberItems}
+                </div>
               </Link>
             </div>
           </div>

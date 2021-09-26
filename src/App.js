@@ -3,16 +3,16 @@ import ListProductPage from "./pages/ProductList/ProductListPage";
 import ShoppingCartPage from "./pages/ShoppingCart/ShoppingCartPage";
 import ProductDetailPage from "./pages/ProductDetail/ProductDetailPage";
 import HomePage from "./pages/Home/HomePage";
+import ServicePage from './pages/services/ServicePage';
+import PhuKienPage from './pages/PhuKien/PhuKienPage';
 import Menu from "./component/Menu/Menu";
 import Footer from "./component/Footer/Footer";
 import React from "react";
-import ServicePage from './pages/services/ServicePage';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
-
 
 function App() {
 
@@ -22,9 +22,12 @@ function App() {
       <Menu/>
 
         <Switch>
-          <Route path="/iphone/:slug/:id" children={<ProductDetailPage />} />
-          <Route path="/iphone">
+          <Route path="/products/:appleProduct/:slug/:id" children={<ProductDetailPage />} />
+          <Route path="/products/:appleProduct">
             <ListProductPage />
+          </Route>
+          <Route path="/phu-kien">
+            <PhuKienPage />
           </Route>
           <Route path="/dich-vu">
             <ServicePage />

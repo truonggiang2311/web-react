@@ -7,6 +7,7 @@ import { useDispatch } from "react-redux";
 import { add1Product } from "../../store/cartSlice";
 
 export default function ProductDetailPage() {
+  let { appleProduct} = useParams();
   let { id } = useParams();
   const dispatch = useDispatch();
 
@@ -17,7 +18,7 @@ export default function ProductDetailPage() {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    fetch("https://product-list1409.herokuapp.com/products/" + id)
+    fetch(`https://product-list1409.herokuapp.com/${appleProduct}/${id}`)
       .then((response) => response.json())
       .then((result) => {
         setProduct(result);
@@ -26,7 +27,7 @@ export default function ProductDetailPage() {
         setLoading(false);
       });
     return () => {};
-  }, [id]);
+  }, [appleProduct, id]);
 
   var formatter = new Intl.NumberFormat("vi-VN", {
     style: "currency",
@@ -64,7 +65,7 @@ export default function ProductDetailPage() {
         <div className="col-6">
           <div className="row">
             <div className="col-12">
-              <img src={srcMain} alt="iphone" />
+              <img style={{"max-width":"80%"}} src={srcMain} alt="iphone" />
             </div>
           </div>
           <div className="row mt-3">
