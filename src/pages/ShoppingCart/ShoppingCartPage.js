@@ -1,8 +1,12 @@
 import styles from "./ShoppingCartPage.module.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { remove1Product } from "../../store/cartSlice";
 
 function ShoppingCartPage() {
+
+  const dispatch = useDispatch()
   const [products, setProducts] = useState(
     JSON.parse(localStorage.getItem("Cart") || "[]")
   );
@@ -39,6 +43,7 @@ function ShoppingCartPage() {
       "Cart",
       JSON.stringify(newProducts.filter((product) => product.id !== id))
     );
+    dispatch(remove1Product())
   }
 
   var formatter = new Intl.NumberFormat("vi-VN", {

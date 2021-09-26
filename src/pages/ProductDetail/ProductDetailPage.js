@@ -3,9 +3,12 @@ import { useParams } from "react-router";
 import ClipLoader from "react-spinners/ClipLoader";
 import Toast from "react-bootstrap/Toast";
 import { ToastContainer } from "react-bootstrap";
+import { useDispatch } from "react-redux";
+import { add1Product } from "../../store/cartSlice";
 
 export default function ProductDetailPage() {
   let { id } = useParams();
+  const dispatch = useDispatch();
 
   const [product, setProduct] = useState([]);
   const [srcMain, setSrcMain] = useState([]);
@@ -44,11 +47,15 @@ export default function ProductDetailPage() {
       cart.push(product);
       localStorage.setItem("Cart", JSON.stringify(cart));
       setShow(true);
+      dispatch(add1Product());
     }
   }
 
   return loading ? (
-    <div className="text-center" style={{"margin-top" : "300px", "margin-bottom" : "1000px"}}>
+    <div
+      className="text-center"
+      style={{ "margin-top": "300px", "margin-bottom": "1000px" }}
+    >
       <ClipLoader color="#36D7B7" loading={loading} size={50} />
     </div>
   ) : (
@@ -107,6 +114,7 @@ export default function ProductDetailPage() {
           >
             Thêm vào giỏ hàng
           </button>
+
           <ToastContainer className="p-3" position="bottom-end">
             <Toast
               onClose={() => setShow(false)}

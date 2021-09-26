@@ -6,6 +6,7 @@ import HomePage from "./pages/Home/HomePage";
 import Menu from "./component/Menu/Menu";
 import Footer from "./component/Footer/Footer";
 import React from "react";
+import ServicePage from './pages/services/ServicePage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -24,6 +25,9 @@ function App() {
           <Route path="/iphone/:slug/:id" children={<ProductDetailPage />} />
           <Route path="/iphone">
             <ListProductPage />
+          </Route>
+          <Route path="/dich-vu">
+            <ServicePage />
           </Route>
           <Route path="/shopping-cart">
             <ShoppingCartPage />

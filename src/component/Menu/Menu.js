@@ -7,10 +7,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import { useSelector } from "react-redux";
 
 export default function Menu() {
   const [inputValue, setInputValue] = useState("");
   const [productSearch, setProductSearch] = useState([]);
+  const numberItems = useSelector((state) => state.cart.numberItems)
 
   function changeValue(e) {
     if (e.target.value !== "") {
@@ -76,7 +78,7 @@ export default function Menu() {
                 <MenuLink to="/khuyen-mai" label="Khuyến mãi" />
               </div>
               <div className="nav-link pe-3">
-                <MenuLink to="/tra gop" label="Trả góp" />
+                <MenuLink to="/tra-gop" label="Trả góp" />
               </div>
 
               <input
@@ -93,8 +95,9 @@ export default function Menu() {
                 Search
               </button>
 
-              <Link className="nav-link" to="/shopping-cart">
+              <Link className="nav-link shopping-cart" to="/shopping-cart">
                 <FontAwesomeIcon icon={faShoppingBag} size="lg" color="white" />
+                <div className="number-shopping-cart text-center">{numberItems}</div>
               </Link>
             </div>
           </div>

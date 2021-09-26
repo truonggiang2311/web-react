@@ -29,3 +29,18 @@
 .active a {
   opacity: 1;
 }
+.number-shopping-cart{
+  background-color: #d9534f;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 50%;
+  color: #FFF;
+  font-size: 70%;
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.shopping-cart{
+  position: relative;
+}
+/* border border-5 */
