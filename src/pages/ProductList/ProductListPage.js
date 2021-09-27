@@ -20,9 +20,9 @@ function ProductListPage() {
     return () => {};
   }, [appleProduct]);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  // }, [appleProduct]);
+  useEffect(() => {
+    setLoading(true);
+  }, [appleProduct]);
 
   function updateSelect(event) {
     if (event.target.value === "popularity") {

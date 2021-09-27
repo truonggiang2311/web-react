@@ -2,6 +2,7 @@ import MenuLink from "./MenuLink";
 import DropDownSearch from "../DropDownSearch/DropDownSearch";
 import "./Menu.css";
 import { debounce } from "lodash";
+// eslint-disable-next-line no-unused-vars
 import { Collapse } from "bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";

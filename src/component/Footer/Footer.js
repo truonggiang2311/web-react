@@ -118,18 +118,18 @@ export default function Footer() {
           </div>
 
           <div className="col-12 ps-0">
-            <p className="Footer-p" style={{ "font-size": "13px" }}>
+            <p className="Footer-p" style={{ "fontSize": "13px" }}>
               More ways to shop:{" "}
               <Link
                 to="/"
-                style={{ color: "#2997ff", opacity: 1, "font-size": "13px" }}
+                style={{ color: "#2997ff", opacity: 1, "fontSize": "13px" }}
               >
                 Find an Apple Store
               </Link>{" "}
               or{" "}
               <Link
                 to="/"
-                style={{ color: "#2997ff", opacity: 1, "font-size": "13px" }}
+                style={{ color: "#2997ff", opacity: 1, "fontSize": "13px" }}
               >
                 other retailer{" "}
               </Link>{" "}
@@ -140,12 +140,12 @@ export default function Footer() {
           <div className="row">
             <div className="col-4 border-top ps-0 pt-3">
               <p
-                style={{ color: "#f5f5f7", opacity: 0.7, "font-size": "13px" }}
+                style={{ color: "#f5f5f7", opacity: 0.7, "fontSize": "13px" }}
               >
                 Copyright © 2021 Apple Inc. All rights reserved.
               </p>
             </div>
-            <div className="col-6 border-top" style={{ "padding-top": "12px" }}>
+            <div className="col-6 border-top" style={{ "paddingTop": "12px" }}>
               <Link to="/" className="ps-2 pe-2 border-end">
                 Privacy
               </Link>
@@ -164,7 +164,7 @@ export default function Footer() {
             </div>
             <div className="col-2 text-end border-top pt-3 pe-0">
               <p
-                style={{ color: "#f5f5f7", opacity: 0.7, "font-size": "13px" }}
+                style={{ color: "#f5f5f7", opacity: 0.7, "fontSize": "13px" }}
               >
                 Viet Nam
               </p>
