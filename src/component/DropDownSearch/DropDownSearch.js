@@ -7,7 +7,7 @@ export default function DropDownSearch({ productSearch }) {
   return (
     <div className="row justify-content-end m-0">
       <div
-        style={{ background: "white", height: "400px" }}
+        style={{ background: "white", maxHeight: "400px" }}
         className="col-6 overflow-scroll"
       >
         {productSearch.map((product) => (

@@ -9,16 +9,35 @@ import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useSelector } from "react-redux";
+// import { useParams } from "react-router";
 
 export default function Menu() {
+  // let { appleProduct } = useParams();
   const [inputValue, setInputValue] = useState("");
   const [productSearch, setProductSearch] = useState([]);
   const numberItems = useSelector((state) => state.cart.numberItems);
+  // const [urlAdd, setUrlAdd] = useState("iphone")
 
   function changeValue(e) {
     if (e.target.value !== "") {
+      let urlAdd = "";
+      if(e.target.value.includes("iphone")){
+        urlAdd = "iphone";
+      } 
+      if(e.target.value.includes("ipad")){
+        urlAdd = "ipad";
+      } 
+      if(e.target.value.includes("mac")){
+        urlAdd = "mac";
+      } 
+      if(e.target.value.includes("watch")){
+        urlAdd = "apple-watch";
+      } 
+      if(e.target.value.includes("air")){
+        urlAdd = "airpods";
+      } 
       fetch(
-        "https://product-list1409.herokuapp.com/products?q=" + e.target.value
+        `https://product-list1409.herokuapp.com/${urlAdd}?q=` + e.target.value
       )
         .then((response) => response.json())
         .then((result) => {
@@ -106,9 +125,9 @@ export default function Menu() {
           </div>
         </div>
       </nav>
-      <div className="DropDownSearch">
-        <DropDownSearch productSearch={productSearch} inputValue={inputValue} />
-      </div>
+      {inputValue !== "" && <div className="DropDownSearch">
+        <DropDownSearch productSearch={productSearch} />
+      </div>}
     </>
   );
 }

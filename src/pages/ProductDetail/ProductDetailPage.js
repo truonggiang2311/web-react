@@ -7,7 +7,7 @@ import { useDispatch } from "react-redux";
 import { add1Product } from "../../store/cartSlice";
 
 export default function ProductDetailPage() {
-  let { appleProduct} = useParams();
+  let { appleProduct } = useParams();
   let { id } = useParams();
   const dispatch = useDispatch();
 
@@ -16,6 +16,8 @@ export default function ProductDetailPage() {
   const [srcThumbs, setSrcThumbs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [show, setShow] = useState(false);
+  const [inputValue, setInputValue] = useState(1);
+  const [notiTypeNumber, setNotiTypeNumber] = useState(false)
 
   useEffect(() => {
     fetch(`https://product-list1409.herokuapp.com/${appleProduct}/${id}`)
@@ -38,24 +40,34 @@ export default function ProductDetailPage() {
     setSrcMain(src);
   }
 
-  function addToCart(product) {
-    var cart = localStorage.getItem("Cart");
-    cart = cart ? JSON.parse(cart) : [];
-    if (cart.some((p) => p.id === product.id)) {
-      setShow(true);
-      return cart;
-    } else {
-      cart.push(product);
-      localStorage.setItem("Cart", JSON.stringify(cart));
-      setShow(true);
-      dispatch(add1Product());
+  function changeQuantity(e) {
+    if(!isNaN(e.target.value) && e.target.value < 200){
+      setInputValue(Number(e.target.value))
     }
+  }
+
+  function addToCart(product) {
+    if(inputValue !== 0){
+      var cart = localStorage.getItem("Cart");
+      cart = cart ? JSON.parse(cart) : [];
+      if (cart.some((p) => p.id === product.id)) {
+        setShow(true);
+        return cart;
+      } else {
+        product.quantity = inputValue;
+        cart.push(product);
+        localStorage.setItem("Cart", JSON.stringify(cart));
+        setShow(true);
+        dispatch(add1Product());
+      }
+    }
+    else setNotiTypeNumber(true)
   }
 
   return loading ? (
     <div
       className="text-center"
-      style={{ "margin-top": "300px", "margin-bottom": "1000px" }}
+      style={{ "marginTop": "300px", "marginBottom": "1000px" }}
     >
       <ClipLoader color="#36D7B7" loading={loading} size={50} />
     </div>
@@ -65,7 +77,7 @@ export default function ProductDetailPage() {
         <div className="col-6">
           <div className="row">
             <div className="col-12">
-              <img style={{"max-width":"80%"}} src={srcMain} alt="iphone" />
+              <img style={{ "maxWidth": "80%" }} src={srcMain} alt="iphone" />
             </div>
           </div>
           <div className="row mt-3">
@@ -108,10 +120,15 @@ export default function ProductDetailPage() {
               Back to school 2021: Tặng Voucher 200K cho Học sinh, Sinh viên
             </li>
           </ul>
+          <h4>Nhập số lượng sản phẩm</h4>
+          <div className="col-2">
+            <input onChange={changeQuantity} value={inputValue} type="text" className="form-control"></input>
+          </div>
+          {notiTypeNumber && <h6 className="pt-1 text-danger">Hãy nhập số lượng</h6>}
           <button
             onClick={() => addToCart(product)}
             type="button"
-            class="btn btn-secondary"
+            className="btn btn-secondary mt-2"
           >
             Thêm vào giỏ hàng
           </button>
