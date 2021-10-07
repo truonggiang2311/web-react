@@ -72,7 +72,7 @@ function ProductListPage() {
         <div className="col-7 col-md-8">
           <p>Hiển thị tất cả {numberResult} kết quả</p>
         </div>
-        <div className="col-5 col-sm-4 text-end">
+        <div className="col-12 col-sm-4 text-sm-end">
           <select
             name="orderby"
             className="orderby"

@@ -150,7 +150,7 @@ function ShoppingCartPage() {
             <div className={`row ${styles.checkout}`}>
               <div className="col-10">
                 <div className="row">
-                  <div className="col-6 ps-5">
+                  <div className="col-12 col-sm-6 ps-5">
                     <h3>Nhập mã giảm giá</h3>
                     <div className="row">
                       <div className="col-6 p-0">
@@ -177,7 +177,7 @@ function ShoppingCartPage() {
                     <p>M-10 : Discount 10%</p>
                     <p>M-15 : Discount 15%</p>
                   </div>
-                  <div className="info-total col-5 ms-lg-auto me-lg-0 ms-auto me-auto">
+                  <div className="info-total col-10 col-sm-5 ms-lg-auto me-lg-0 ms-auto me-auto">
                     <h3>Thanh toán</h3>
                     <div className="row">
                       <div className="col-6">Subtotal :</div>

@@ -9,14 +9,11 @@ import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-// import { useParams } from "react-router";
 
 export default function Menu() {
-  // let { appleProduct } = useParams();
   const [inputValue, setInputValue] = useState("");
   const [productSearch, setProductSearch] = useState([]);
   const numberItems = useSelector((state) => state.cart.numberItems);
-  // const [urlAdd, setUrlAdd] = useState("iphone")
 
   function changeValue(e) {
     if (e.target.value !== "") {
@@ -52,10 +49,16 @@ export default function Menu() {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light mb-0">
-        <div className="container-fluid col-10 m-auto ps-0">
+        <div className="container-fluid col-10 m-auto">
           <div className="navbar-brand pe-3">
             <MenuLink activeOnlyWhenExact={true} to="/" label="Apple" />
           </div>
+          <Link className="nav-link shopping-cart-mobile" to="/shopping-cart">
+                <FontAwesomeIcon icon={faShoppingBag} size="lg" color="white" />
+                <div className="number-shopping-cart-mobile text-center">
+                  {numberItems}
+                </div>
+              </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -67,6 +70,7 @@ export default function Menu() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <div className="nav-link pe-3">
@@ -94,12 +98,6 @@ export default function Menu() {
               <div className="nav-link pe-3">
                 <MenuLink to="/dich-vu" label="Dịch vụ" />
               </div>
-              <div className="nav-link pe-3">
-                <MenuLink to="/khuyen-mai" label="Khuyến mãi" />
-              </div>
-              <div className="nav-link pe-3">
-                <MenuLink to="/tra-gop" label="Trả góp" />
-              </div>
 
               <input
                 onChange={debounce(changeValue, 500)}
@@ -123,6 +121,7 @@ export default function Menu() {
               </Link>
             </div>
           </div>
+          
         </div>
       </nav>
       {inputValue !== "" && <div className="DropDownSearch">

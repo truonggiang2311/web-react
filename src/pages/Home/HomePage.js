@@ -51,7 +51,7 @@ export default function Home() {
       <div className="col-10 m-auto mt-4">
         <div className="row">
           <div className="col-4">
-            <Link to="/iphone">
+            <Link to="/products/iphone">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/07/6b8edb5bf889cfd91e7d3b09133f0444.iPhone-1-768x768.png"
@@ -61,7 +61,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="col-4">
-            <Link to="/ipad">
+            <Link to="/products/ipad">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/09/e3af5bcef72c817c3f0018eb70bdf90c.Untitled-1___-removebg-preview-400x400.png"
@@ -71,7 +71,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="col-4">
-            <Link to="/mac">
+            <Link to="/products/mac">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/07/c1d0e36ca9de59a0829a20bd2898dc1d.Mac-1-768x768.png"
@@ -85,21 +85,30 @@ export default function Home() {
         <div className="row text-center">
           <div className="col-4">
             <h3 className="pt-2 pb-3">
-              <Link to="/iphone" className="text-body text-decoration-none">
+              <Link
+                to="/products/iphone"
+                className="text-body text-decoration-none"
+              >
                 iPhone
               </Link>
             </h3>
           </div>
           <div className="col-4">
             <h3 className="pt-2 pb-3">
-              <Link to="/ipad" className="text-body text-decoration-none">
+              <Link
+                to="/products/ipad"
+                className="text-body text-decoration-none"
+              >
                 iPad
               </Link>
             </h3>
           </div>
           <div className="col-4">
             <h3 className="pt-2 pb-3">
-              <Link to="/mac" className="text-body text-decoration-none">
+              <Link
+                to="/products/mac"
+                className="text-body text-decoration-none"
+              >
                 Mac
               </Link>
             </h3>
@@ -108,7 +117,7 @@ export default function Home() {
 
         <div className="row">
           <div className="col-4">
-            <Link to="/apple-watch">
+            <Link to="/products/apple-watch">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/07/fc367fa05fefb0d289c908bf4ac217cb.Watch-1-768x768.png"
@@ -118,7 +127,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="col-4">
-            <Link to="/airpods">
+            <Link to="/products/airpods">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/06/1ce0caa491dc3f4dda9532d2af16c743.AirPods-Max-768x768.png"
@@ -142,7 +151,7 @@ export default function Home() {
           <div className="col-4">
             <h3 className="pt-2 pb-3">
               <Link
-                to="/apple-watch"
+                to="/products/apple-watch"
                 className="text-body text-decoration-none"
               >
                 Apple Watch
@@ -152,7 +161,7 @@ export default function Home() {
           <div className="col-4">
             <h3 className="pt-2 pb-3">
               <Link
-                to="/apple-airpods"
+                to="/products/apple-airpods"
                 className="text-body text-decoration-none"
               >
                 AirPods
@@ -171,13 +180,19 @@ export default function Home() {
 
       <div className="row">
         <Link to="/">
-          <img src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/09/6b813b7bce037cf0a0342f87a5601208.Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png" alt="business"></img>
+          <img
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/09/6b813b7bce037cf0a0342f87a5601208.Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png"
+            alt="business"
+          ></img>
         </Link>
       </div>
 
       <div className="row">
         <Link to="/">
-          <img src="https://www.apple.com/v/home/hf/images/overview/iphone_13_hero__fy4bx6w0wfma_large_2x.jpg" alt="business"></img>
+          <img
+            src="https://www.apple.com/v/home/hf/images/overview/iphone_13_hero__fy4bx6w0wfma_large_2x.jpg"
+            alt="business"
+          ></img>
         </Link>
       </div>
     </div>

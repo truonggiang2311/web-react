@@ -138,31 +138,31 @@ export default function Footer() {
           </div>
 
           <div className="row">
-            <div className="col-4 border-top ps-0 pt-3">
+            <div className="col-12 col-sm-4 border-top ps-0 pt-3">
               <p
                 style={{ color: "#f5f5f7", opacity: 0.7, "fontSize": "13px" }}
               >
                 Copyright © 2021 Apple Inc. All rights reserved.
               </p>
             </div>
-            <div className="col-6 border-top" style={{ "paddingTop": "12px" }}>
-              <Link to="/" className="ps-2 pe-2 border-end">
+            <div className="col-12 col-sm-6 border-top pb-3 pb-sm-0" style={{ "paddingTop": "12px" }}>
+              <Link to="/" className="ps-2 pe-2 border-end" style={{"fontSize": "13px" }}>
                 Privacy
               </Link>
-              <Link to="/" className="ps-2 pe-2 border-end">
+              <Link to="/" className="ps-2 pe-2 border-end" style={{"fontSize": "13px" }}>
                 Term of Use
               </Link>
-              <Link to="/" className="ps-2 pe-2 border-end">
+              <Link to="/" className="ps-2 pe-2 border-end" style={{"fontSize": "13px" }}>
                 Sales and Refunds
               </Link>
-              <Link to="/" className="ps-2 pe-2 border-end">
+              <Link to="/" className="ps-2 pe-2 border-end" style={{"fontSize": "13px" }}>
                 Legal
               </Link>
-              <Link to="/" className="ps-2 pe-2">
-                Site Map
+              <Link to="/" className="ps-2 pe-2" style={{"fontSize": "13px" }}>
+                Site
               </Link>
             </div>
-            <div className="col-2 text-end border-top pt-3 pe-0">
+            <div className="col-12 col-sm-2 text-end border-top pt-3 pe-0">
               <p
                 style={{ color: "#f5f5f7", opacity: 0.7, "fontSize": "13px" }}
               >
