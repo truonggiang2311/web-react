@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
-import { useParams } from 'react-router';
 
 export default function DropDownSearch({ productSearch, appleProductToDropdown }) {
-  let { appleProduct} = useParams();
   var formatter = new Intl.NumberFormat("vi-VN", {
     style: "currency",
     currency: "VND",
