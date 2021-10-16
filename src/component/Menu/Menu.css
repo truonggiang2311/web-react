@@ -22,7 +22,6 @@
   opacity: 1;
 }
 .DropDownSearch {
-  right: 0;
   position: absolute;
   z-index: 1000;
 }

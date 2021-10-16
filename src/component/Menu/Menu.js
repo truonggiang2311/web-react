@@ -14,24 +14,30 @@ export default function Menu() {
   const [inputValue, setInputValue] = useState("");
   const [productSearch, setProductSearch] = useState([]);
   const numberItems = useSelector((state) => state.cart.numberItems);
+  const [appleProductToDropdown, setAppleProductToDropdown] = useState("")
 
   function changeValue(e) {
+    let urlAdd="";
     if (e.target.value !== "") {
-      let urlAdd = "";
       if(e.target.value.includes("iphone")){
-        urlAdd = "iphone";
+        urlAdd="iphone"
+        setAppleProductToDropdown("iphone");
       } 
       if(e.target.value.includes("ipad")){
         urlAdd = "ipad";
+        setAppleProductToDropdown("ipad");
       } 
       if(e.target.value.includes("mac")){
         urlAdd = "mac";
+        setAppleProductToDropdown("mac");
       } 
       if(e.target.value.includes("watch")){
         urlAdd = "apple-watch";
+        setAppleProductToDropdown("apple-watch");
       } 
       if(e.target.value.includes("air")){
         urlAdd = "airpods";
+        setAppleProductToDropdown("airpods");
       } 
       fetch(
         `https://product-list1409.herokuapp.com/${urlAdd}?q=` + e.target.value
@@ -125,7 +131,7 @@ export default function Menu() {
         </div>
       </nav>
       {inputValue !== "" && <div className="DropDownSearch">
-        <DropDownSearch productSearch={productSearch} />
+        <DropDownSearch productSearch={productSearch} appleProductToDropdown={appleProductToDropdown} />
       </div>}
     </>
   );

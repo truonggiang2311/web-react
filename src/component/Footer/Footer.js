@@ -138,7 +138,7 @@ export default function Footer() {
           </div>
 
           <div className="row">
-            <div className="col-12 col-sm-4 border-top ps-0 pt-3">
+            <div className="col-12 col-sm-4 border-top ps-0 pt-3 coppyright-desktop">
               <p
                 style={{ color: "#f5f5f7", opacity: 0.7, "fontSize": "13px" }}
               >
@@ -161,6 +161,13 @@ export default function Footer() {
               <Link to="/" className="ps-2 pe-2" style={{"fontSize": "13px" }}>
                 Site
               </Link>
+            </div>
+            <div className="col-12 col-sm-4 border-top ps-0 pt-3 coppyright-mobile">
+              <p
+                style={{ color: "#f5f5f7", opacity: 0.7, "fontSize": "13px" }}
+              >
+                Copyright © 2021 Apple Inc. All rights reserved.
+              </p>
             </div>
             <div className="col-12 col-sm-2 text-end border-top pt-3 pe-0">
               <p

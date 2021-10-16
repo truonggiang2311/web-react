@@ -25,3 +25,13 @@
     opacity: 1;
     text-decoration: underline;
 }
+@media (max-width : 576px) {
+  .coppyright-desktop{
+    display: none;
+  }
+}
+@media (min-width : 576px) {
+  .coppyright-mobile{
+    display: none;
+  }
+}

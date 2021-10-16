@@ -51,8 +51,11 @@ export default function ProductDetailPage() {
       var cart = localStorage.getItem("Cart");
       cart = cart ? JSON.parse(cart) : [];
       if (cart.some((p) => p.id === product.id)) {
+        cart = cart.filter((p)=>p.id !==product.id);
+        product.quantity = inputValue;
+        cart.push(product);
+        localStorage.setItem("Cart", JSON.stringify(cart));
         setShow(true);
-        return cart;
       } else {
         product.quantity = inputValue;
         cart.push(product);

@@ -14,35 +14,21 @@ export default function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/08/a48666834af0edb53f94f1d99253757d.Banner-PC-1-back-to-school-1.jpg"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/08/Banner-PC-1-back-to-school-1-2048x610.jpg"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/09/ce23b0a78eec151ad1fc01de572471cf.Banner-PC-ipad-mini.jpeg"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/08/Banner-PC-3-imac-2048x609.jpg"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/09/e8525f89ef74e05f5f70db4297153519.Banner-PC-2-watch-6-1.png"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/09/e1256059eaf289ce4e9ccbe7f336df00.banner-PC-iPhone-11.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/08/b50e4a13ef7e9590eec4ea1c1fd11162.Banner-PC-3-imac.jpg"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/08/U%CC%9Bu-da%CC%83i-vietin-bank-PC-2048x619.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -54,7 +40,7 @@ export default function Home() {
             <Link to="/products/iphone">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/07/6b8edb5bf889cfd91e7d3b09133f0444.iPhone-1-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/iPhone-12-768x768.png"
                   alt="iphone"
                 ></img>
               </div>
@@ -64,7 +50,7 @@ export default function Home() {
             <Link to="/products/ipad">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/09/e3af5bcef72c817c3f0018eb70bdf90c.Untitled-1___-removebg-preview-400x400.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/iPad-air-gen4-skyblue-768x768.png"
                   alt=""
                 ></img>
               </div>
@@ -74,7 +60,7 @@ export default function Home() {
             <Link to="/products/mac">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/07/c1d0e36ca9de59a0829a20bd2898dc1d.Mac-1-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/rev-7332b8e/wp-content/uploads/2021/07/MacBook-Air-MQD32-768x768.png"
                   alt=""
                 ></img>
               </div>
@@ -120,7 +106,7 @@ export default function Home() {
             <Link to="/products/apple-watch">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/07/fc367fa05fefb0d289c908bf4ac217cb.Watch-1-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/Watch-5-Nike-1-768x768.png"
                   alt=""
                 ></img>
               </div>
@@ -130,7 +116,7 @@ export default function Home() {
             <Link to="/products/airpods">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/06/1ce0caa491dc3f4dda9532d2af16c743.AirPods-Max-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/1.-AirPods-Pro-Max-768x768.png"
                   alt=""
                 ></img>
               </div>
@@ -140,7 +126,7 @@ export default function Home() {
             <Link to="/phu-kien">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/wp-content/uploads/2021/07/47f413f15c8ec03b0187b4bad6d4679e.Phu%CC%A3-kie%CC%A3%CC%82n-1-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/10/300x300-03-1.png"
                   alt=""
                 ></img>
               </div>
@@ -181,7 +167,7 @@ export default function Home() {
       <div className="row">
         <Link to="/">
           <img
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/wp-content/uploads/2021/09/6b813b7bce037cf0a0342f87a5601208.Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/09/Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png"
             alt="business"
           ></img>
         </Link>
