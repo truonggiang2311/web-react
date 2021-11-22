@@ -11,7 +11,7 @@ export default function ServicePage() {
             <div className={`${styles.appleService}`}>
               <Link to="/dich-vu">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/apple-care-logo-03-768x769.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/apple-care-logo-03-768x769.png"
                   alt="apple-care"
                 ></img>
               </Link>
@@ -23,7 +23,7 @@ export default function ServicePage() {
             <div className={`${styles.appleService}`}>
               <Link to="/dich-vu">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/1-02-5-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/1-02-5-768x768.png"
                   alt="microsoft-office"
                 ></img>
               </Link>

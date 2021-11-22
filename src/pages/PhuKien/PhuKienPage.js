@@ -11,7 +11,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/1.-Apple-TV-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/1.-Apple-TV-768x768.png"
                   alt="apple-tv"
                 ></img>
               </Link>
@@ -24,7 +24,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/phu%CC%A3-kie%CC%A3%CC%82n-10-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/phu%CC%A3-kie%CC%A3%CC%82n-10-768x768.png"
                   alt="air-tags"
                 ></img>
               </Link>
@@ -37,7 +37,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/3.-Beats-1-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/3.-Beats-1-768x768.png"
                   alt="beats"
                 ></img>
               </Link>
@@ -50,7 +50,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/rev-7332b8e/wp-content/uploads/2021/07/4.-Op-son-mai-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/rev-08c3c37/wp-content/uploads/2021/07/4.-Op-son-mai-768x768.png"
                   alt="op"
                 ></img>
               </Link>
@@ -63,7 +63,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/5.-Tai-nghe-Loa-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/5.-Tai-nghe-Loa-768x768.png"
                   alt="speaker"
                 ></img>
               </Link>
@@ -76,7 +76,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/Phu%CC%A3-kie%CC%A3%CC%82n-beta-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/Phu%CC%A3-kie%CC%A3%CC%82n-beta-768x768.png"
                   alt="phukien"
                 ></img>
               </Link>
@@ -89,7 +89,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/1-01-2-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/Phukienapplechinhhang-.png"
                   alt="mac-book"
                 ></img>
               </Link>
@@ -102,7 +102,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/Da%CC%82y-deo-Apple-Watch-Sport-Loop-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/Da%CC%82y-deo-Apple-Watch-Sport-Loop-768x768.png"
                   alt="apple-watch"
                 ></img>
               </Link>
@@ -115,7 +115,7 @@ export default function ServicePage() {
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/pk-ipad-1_optimized-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/pk-ipad-1_optimized-768x768.png"
                   alt="ipad"
                 ></img>
               </Link>

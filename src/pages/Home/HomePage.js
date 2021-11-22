@@ -14,21 +14,21 @@ export default function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/08/Banner-PC-1-back-to-school-1-2048x610.jpg"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/08/Banner-PC-1-back-to-school-1-2048x610.jpg"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/08/Banner-PC-3-imac-2048x609.jpg"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/08/Banner-PC-3-imac-2048x609.jpg"
             alt="Second slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/08/U%CC%9Bu-da%CC%83i-vietin-bank-PC-2048x619.jpg"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/08/U%CC%9Bu-da%CC%83i-vietin-bank-PC-2048x619.jpg"
             alt="Third slide"
           />
         </Carousel.Item>
@@ -40,7 +40,7 @@ export default function Home() {
             <Link to="/products/iphone">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/iPhone-12-768x768.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/elementor/thumbs/family-iphone-pemr7amaprf3ro85pdsnw8bu7hwsxex4nvxp8vbl4o.png"
                   alt="iphone"
                 ></img>
               </div>
@@ -50,8 +50,8 @@ export default function Home() {
             <Link to="/products/ipad">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/iPad-air-gen4-skyblue-768x768.png"
-                  alt=""
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/rev-08c3c37/wp-content/uploads/elementor/thumbs/Untitled-1___-removebg-preview-pd6f51mvlyeas5mzd43cxy64u0v15xesr4crctz7p4.png"
+                  alt="ipad"
                 ></img>
               </div>
             </Link>
@@ -60,8 +60,8 @@ export default function Home() {
             <Link to="/products/mac">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/rev-7332b8e/wp-content/uploads/2021/07/MacBook-Air-MQD32-768x768.png"
-                  alt=""
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-2.png"
+                  alt="macbook"
                 ></img>
               </div>
             </Link>
@@ -106,8 +106,8 @@ export default function Home() {
             <Link to="/products/apple-watch">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/Watch-5-Nike-1-768x768.png"
-                  alt=""
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/Watch-5-Nike-1-768x768.png"
+                  alt="apple-watch"
                 ></img>
               </div>
             </Link>
@@ -116,8 +116,8 @@ export default function Home() {
             <Link to="/products/airpods">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/07/1.-AirPods-Pro-Max-768x768.png"
-                  alt=""
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-02-1.png"
+                  alt="airpod"
                 ></img>
               </div>
             </Link>
@@ -126,7 +126,7 @@ export default function Home() {
             <Link to="/phu-kien">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/10/300x300-03-1.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-03-1.png"
                   alt=""
                 ></img>
               </div>
@@ -167,7 +167,7 @@ export default function Home() {
       <div className="row">
         <Link to="/">
           <img
-            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-7332b8e/wp-content/uploads/2021/09/Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png"
+            src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/09/Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png"
             alt="business"
           ></img>
         </Link>
