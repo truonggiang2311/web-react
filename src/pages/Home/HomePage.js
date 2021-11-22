@@ -38,7 +38,7 @@ export default function Home() {
         <div className="row">
           <div className="col-4">
             <Link to="/products/iphone">
-              <div className={`m-1 ${styles.appleProducts}`}>
+              <div className={`m-1 ${styles.appleProducts} text-center`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/elementor/thumbs/family-iphone-pemr7amaprf3ro85pdsnw8bu7hwsxex4nvxp8vbl4o.png"
                   alt="iphone"
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="col-4">
             <Link to="/products/ipad">
-              <div className={`m-1 ${styles.appleProducts}`}>
+              <div className={`m-1 ${styles.appleProducts} text-center`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/source/rev-08c3c37/wp-content/uploads/elementor/thumbs/Untitled-1___-removebg-preview-pd6f51mvlyeas5mzd43cxy64u0v15xesr4crctz7p4.png"
                   alt="ipad"
@@ -58,9 +58,9 @@ export default function Home() {
           </div>
           <div className="col-4">
             <Link to="/products/mac">
-              <div className={`m-1 ${styles.appleProducts}`}>
+              <div className={`m-1 ${styles.appleProducts} text-center ${styles.macBook}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-2.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/MacBook-Air-M1_Overview-768x768.png"
                   alt="macbook"
                 ></img>
               </div>
@@ -104,7 +104,7 @@ export default function Home() {
         <div className="row">
           <div className="col-4">
             <Link to="/products/apple-watch">
-              <div className={`m-1 ${styles.appleProducts}`}>
+              <div className={`m-1 ${styles.appleProducts} text-center`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/Watch-5-Nike-1-768x768.png"
                   alt="apple-watch"
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
           <div className="col-4">
             <Link to="/products/airpods">
-              <div className={`m-1 ${styles.appleProducts}`}>
+              <div className={`m-1 ${styles.appleProducts} text-center`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-02-1.png"
                   alt="airpod"
@@ -124,7 +124,7 @@ export default function Home() {
           </div>
           <div className="col-4">
             <Link to="/phu-kien">
-              <div className={`m-1 ${styles.appleProducts}`}>
+              <div className={`m-1 ${styles.appleProducts} text-center`}>
                 <img
                   src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-03-1.png"
                   alt=""
