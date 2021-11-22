@@ -60,7 +60,7 @@ export default function Home() {
             <Link to="/products/mac">
               <div className={`m-1 ${styles.appleProducts}`}>
                 <img
-                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/10/300x300-2.png"
+                  src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/07/MacBook-Air-M1_Overview-768x768.png"
                   alt="macbook"
                 ></img>
               </div>
