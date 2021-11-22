@@ -166,7 +166,7 @@ export default function Home() {
 
       <div className="row">
         <Link to="/">
-          <img
+          <img className={styles.business}
             src="https://cdn-dgcei.nitrocdn.com/QaFavQVnaqgHtiSsAelwGDKVguOuACXM/assets/static/optimized/rev-08c3c37/wp-content/uploads/2021/09/Desktop-U%CC%9Bu-da%CC%83i-nha%CC%82n-vie%CC%82n-2048x939.png"
             alt="business"
           ></img>
@@ -175,7 +175,7 @@ export default function Home() {
 
       <div className="row">
         <Link to="/">
-          <img
+          <img className={styles.business}
             src="https://www.apple.com/v/home/hf/images/overview/iphone_13_hero__fy4bx6w0wfma_large_2x.jpg"
             alt="business"
           ></img>
