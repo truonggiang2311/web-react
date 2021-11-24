@@ -12,7 +12,7 @@ export default function ProductList({ products }) {
   });
 
   return products.map((product) => (
-    <div className="col-12 col-sm-4 text-center" key={product.id}>
+    <div className="col-12 col-sm-4 col-md-3 text-center" key={product.id}>
       <Link to={`/products/${appleProduct}/${product.slug}/${product.id}`} className={styles.productName}>
         <img className={styles.img} alt="iphone" src={product.src} />
         <h3>{product.name}</h3>

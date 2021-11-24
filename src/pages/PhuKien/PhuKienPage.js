@@ -7,7 +7,7 @@ export default function ServicePage() {
       <div className="col-10 m-auto">
         <h1 className="mt-4">Phụ Kiện</h1>
         <div className="row">
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -20,7 +20,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 4.690.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -33,7 +33,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 749.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -46,7 +46,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 1.390.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -59,7 +59,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 2.390.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -72,7 +72,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 900.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -85,7 +85,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 480.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -98,7 +98,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 1.890.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
@@ -111,7 +111,7 @@ export default function ServicePage() {
             <p className="text-center mt-2">Giá từ: 850.000đ</p>
           </div>
 
-          <div className="col-4 mt-2 mb-4">
+          <div className="col-md-3 col-4 mt-2 mb-4">
             <div className={`${styles.PhuKien}`}>
               <Link to="/phu-kien">
                 <img
